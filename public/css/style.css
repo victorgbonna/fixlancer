@@ -1,0 +1,408 @@
+body{
+    background: #ffffff;
+    height: 100%; 
+    font-family: cursive;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 8%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    margin: -2px 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+}
+nav .brand-name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* SECTION */
+section{
+    margin: 30px 1%;
+    max-width: inherit;
+    height: 100%;
+    /* background: hotpink; */
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: 0 8px 5px -3px rgb(184, 174, 174);
+}
+.input-append{
+    display: flex;
+    width: 450px;
+}
+.input-append input{
+    flex-basis: 75%;
+}
+.input-append button{
+    margin-left: -25px;
+    flex-basis: 25%;
+}
+.about{
+    position: relative;    
+    right: 10%;
+}
+
+/* CONTENTS */
+.contents{
+    /* background: lawngreen; */
+    max-width: inherit;
+    width: 80%;
+    margin: 0 10%;
+    /* background: paleturquoise; */
+    /* padding: 0 5%; */
+}
+
+.cat a img{
+    border-radius: 5px;
+    width: 350px;
+}
+.cat a{
+    flex-basis: 20%;
+}
+.t{
+    display: none;
+}
+.cat-options select{
+    padding: 10px 8px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(92, 61, 61);
+    margin:0 0.2%;
+    border:none;
+    box-shadow: inset 0.02px 0.03px 3px 0.5px rgba(143, 136, 136, 0.6)
+}
+.feat-options{
+    display: flex;
+    /* background: red; */
+    justify-content: space-between;
+}
+
+.feat-options>div{
+    flex-basis: 23%;
+    /* background: blue; */
+    /* margin-right: 1.5%; */
+    box-shadow: inset 0.02px 0.03px 3px 0.5px rgba(143, 136, 136, 0.6)
+}
+
+.feat-options div .name{    
+    /* background-color: red; */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.8em;
+    margin-left: 2%;
+}
+
+.feat-options div .desc{    
+    margin: 0 3%;
+    height: 40px;
+    font-size: 0.9em;
+    font-weight: 600;
+    /* background: blue; */
+}
+.feat-options div div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.feat-options div .time{
+    font-size: 0.8em;
+    align-self: center;
+}
+
+.feat-options div .price{
+  color: lightgreen;
+  font-weight: bold;   
+}
+/* RECOMMENDED */
+.rec-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: coral; */
+}
+.rec-options article{
+    flex-basis: 15%;
+    margin-bottom: 1%;
+    /* background: blue; */
+    box-shadow: inset 0.02px 0.03px 3px 0.5px rgba(143, 136, 136, 0.6)  
+}
+.rec-options article .img2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.rec-options article img{
+    width: 100%;
+    height: 50%;/* background: blue; */
+}
+.rec-options article .img2 p{
+    display: none;
+    /* background: blue; */
+}
+/* .rec-options article img{
+    width: 100%;
+    height: 50%;
+}  */
+.rec-options article .rec-name{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.8em;
+    margin-left: 2%;
+} 
+.rec-options article .rec-descr{
+    font-size: 0.9em;
+    font-weight: normal;    
+    margin: 0 3%;
+    height: 40px;
+    letter-spacing: -1px;
+    /* background: blue; */
+}
+.rec-options article div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.rec-options article .rec-time{
+    font-size: 0.8em;
+    align-self: center;
+}
+.rec-options article .rec-price{
+    font-size: 0.7em;
+    color: lightgreen;
+    font-weight: bold;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background: #04081d;
+    color: #374355;
+    font-size: 0.8em;
+    padding: 10px;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    /* background-color: darkgreen; */
+    width: 30%;
+}
+
+/* FOR PHONES  */
+@media(max-width:500px){
+    .area{
+        overflow: hidden;
+        /* background: #374355; */
+    }
+    nav{
+        display: block;
+        margin-left: 10px;
+    }
+    nav ul{
+        margin-top: 20px;
+        padding-left: 0;
+        margin-left: 0;
+        position: absolute;
+        left: 0px;
+        font-size: 0.8em;
+    }
+    section{
+        box-shadow: none;
+        display: block;
+        margin: 50px 5%;
+        width: 100%;
+    }
+    .about{
+        text-align: center;
+        /* background: chocolate; */
+    }
+    .about-1{
+        margin-bottom: 60px;
+    }
+    .about-1 p{
+        font-size: 1.5em !important;
+    }
+    section img{
+        display: none;
+    }
+    .input-append{
+        /* background: crimson; */
+        width: 300px;
+        margin-left: 30px;
+        flex-wrap: wrap;    
+        padding-left: 10px;
+    }       
+    .input-append input{
+        padding: 15px !important;
+        flex-basis: 90%;
+        margin-bottom: 5px;
+    }
+    .input-append button{
+        margin-left: 0%;
+        padding: 15px !important;
+        flex-basis: 100%;
+    }
+    .about-2 p{
+        margin: 10px 50px;
+        text-align: left;
+        font-size: 1em !important;
+    }
+    .contents{
+        width: 95%;
+        padding: 0 2%;
+        margin: 0;
+    }
+    
+    .t{
+        display: block;
+    }
+    .t img{
+        width: 100%;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .cat a{
+        display: none;
+    }
+    .cat-options{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .cat-options select{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .feat-options{
+        margin-bottom: 30px;
+        flex-wrap: nowrap;
+        justify-content: unset;
+        /* background: red; */
+        overflow-x: scroll;
+        /* background: red; */
+
+    }
+    .feat-options>div{
+        min-width: 70%;
+        flex-basis: 70%;
+        margin-right: 10px;
+    }
+    .rec-options{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
+        /* background: coral; */
+    }
+    .rec-options article{
+        height: 150px;
+        min-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 5%;
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+    .rec-options article .img2{
+        padding: 0;
+        display: block;
+        float: left;
+        width: 30%;
+        margin-right: 20px;
+        height: 100%;
+        /* background: blue; */
+    }
+    .rec-options article .img2 img{
+        height: 70%;
+        /* background: blue; */
+    }
+    .rec-options article .img2 p{
+        display: block;
+        /* background: blue; */
+    }
+    .rec-options article > .rec-name{
+        display: none;
+    } 
+    .rec-options article .rec-descr{    
+        font-size: 0.8em;
+        letter-spacing: normal;
+        /* background: blue; */
+    }
+    .rec-options article .last{
+        /* background: blueviolet; */
+        height: 75%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2%;
+    }
+    .rec-options article .rec-time{
+        font-size: 0.7em;
+        align-self: flex-start;
+    }
+    .rec-options article .rec-price{
+        color: lightgreen;
+        font-weight: bold;
+        align-self: flex-end;
+    }
+    .search{
+        height: 130px;
+        padding-left: 20px !important;
+        padding-top: 10px !important;
+        padding-right: 20px !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        /* padding: 0 !important; */
+    }
+    .search .input-append{
+        padding: 0;
+        margin: 0;
+    }
+    .search .input-append input{
+        margin: 0 !important;
+        min-width: 230px !important;
+    }
+    .semi-footer{
+        margin-top: 50px !important;
+        padding: 10px 3px !important;
+    }
+    .semi-footer> .text-area> p{
+        font-size: 1.1em !important;
+    }
+    .semi-footer .text-area{
+        width: 100% !important;
+        height: 350px !important;
+    }
+    .semi-footer .img{
+        display: none;
+    }
+    .see-on div :last-child{
+        bottom: 0px !important;
+    }
+    
+    footer{
+        display: block;
+    }
+    footer ul{
+        flex-wrap: wrap;
+        padding: 0px;
+        width: 80%;
+        justify-content: unset;
+    }
+    footer ul li{
+        margin-right: 8px;
+        margin-bottom: 5px;
+        min-width: 30%;
+        flex-basis: 30%;
+    }
+    footer :last-child{
+        text-align: center;
+    }
+}
